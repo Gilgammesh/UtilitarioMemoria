@@ -1,0 +1,67 @@
+# Compilados y binarios (Windows y Linux)
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Archivos objeto
+*.o
+*.obj
+
+# Archivos de depuración y log
+*.log
+*.pdb
+*.idb
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*~
+
+# Archivos de dependencias
+*.d
+
+# Archivos generados por editores/IDE
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.ncb
+*.aps
+*.cache
+*.db
+*.opendb
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Make/CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+build/
+Debug/
+Release/
+
+# Qt Creator
+*.pro.user*
+*.qbs.user*
+*.autosave
+
+# Archivos generados por sistemas de versionado
+*.orig
+
+# Archivos de entorno o configuración personal
+.env
+.settings/
+*.swp
+
+# Carpetas ocultas del sistema
+.DS_Store
+Thumbs.db
