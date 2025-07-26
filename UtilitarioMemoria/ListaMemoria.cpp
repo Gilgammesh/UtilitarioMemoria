@@ -80,7 +80,7 @@ HWND CrearListViewMemoria(HWND hWndParent, HINSTANCE hInst, int x, int y, int wi
 void InicializarColumnasListViewMemoria(HWND hList)
 {
     const wchar_t* headersFreeze[] = { L"Congelar", L"Descripcion", L"Direccion", L"Tipo", L"Valor" };
-    int widthsFreeze[] = { 90, 180, 140, 100, 160 };
+    int widthsFreeze[] = { 80, 190, 140, 100, 160 };
     for (int i = 0; i < 5; ++i)
     {
         LVCOLUMNW lvc = { 0 };

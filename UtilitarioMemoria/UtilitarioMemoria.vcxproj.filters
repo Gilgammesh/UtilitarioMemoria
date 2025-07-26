@@ -54,6 +54,9 @@
     <ClInclude Include="ConfiguracionFavoritos.h">
       <Filter>Archivos de origen</Filter>
     </ClInclude>
+    <ClInclude Include="BuscarInstruccionesModificanMemoria.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UtilitarioMemoria.cpp">
@@ -86,6 +89,9 @@
     <ClCompile Include="ConfiguracionFavoritos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="BuscarInstruccionesModificanMemoria.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="UtilitarioMemoria.rc">
@@ -106,6 +112,9 @@
       <Filter>Archivos de recursos</Filter>
     </Image>
     <Image Include="load.ico">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="find.ico">
       <Filter>Archivos de recursos</Filter>
     </Image>
   </ItemGroup>

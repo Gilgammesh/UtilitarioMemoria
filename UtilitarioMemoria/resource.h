@@ -1,5 +1,5 @@
 //{{NO_DEPENDENCIES}}
-// Archivo de inclusión generado de Microsoft Visual C++.
+// Archivo de inclusiï¿½n generado de Microsoft Visual C++.
 // Usado por UtilitarioMemoria.rc
 //
 #define IDC_MYICON                      2
@@ -15,9 +15,17 @@
 #define IDI_PROCESSICO                  135
 #define IDI_SAVEICO                     136
 #define IDI_LOADICO                     137
+#define IDI_FINDICO                     138
 #define IDD_CAMBIAR_VALOR               201
+#define IDD_VISUALIZAR_VALOR            202
+#define IDD_BUSCAR_INSTRUCCIONES        210
+#define IDR_MENU_MEMORIA_POPUP          301
 #define IDC_EDIT_NUEVO_VALOR            1001
+#define IDC_LIST_INSTRUCCIONES          1011
+#define IDC_EDIT_LOG                    1012
 #define IDC_STATIC                      -1
+#define ID_POPUP_FIND_ACCESS            40001
+#define ID_POPUP_FIND_WRITE             40002
 
 // Next default values for new objects
 // 

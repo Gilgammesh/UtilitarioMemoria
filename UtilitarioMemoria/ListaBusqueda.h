@@ -3,8 +3,10 @@
 #include <vector>
 #include "BusquedaMemoria.h"
 
-HWND CrearLabelTotal(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id);
+HWND CrearLabelTotalRegistros(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id);
+HWND CrearLabelNroEscaneos(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id);
 HWND CrearListViewPrincipal(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id);
+
 void InicializarColumnasListView(HWND hListView);
 void ActualizarListViewPrincipalString(HWND hListView, const std::vector<ScanResultString>& resultados);
 void ActualizarListViewPrincipalString(HWND hListView, const std::vector<ScanResultString>& resultados, HWND hLabelTotal);

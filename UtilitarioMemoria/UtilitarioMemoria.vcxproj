@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BuscarInstruccionesModificanMemoria.h" />
     <ClInclude Include="BusquedaMemoria.h" />
     <ClInclude Include="ConfiguracionFavoritos.h" />
     <ClInclude Include="DialogoCambiarValor.h" />
@@ -138,6 +139,7 @@
     <ClInclude Include="UtilitarioMemoria.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BuscarInstruccionesModificanMemoria.cpp" />
     <ClCompile Include="BusquedaMemoria.cpp" />
     <ClCompile Include="ConfiguracionFavoritos.cpp" />
     <ClCompile Include="DialogoCambiarValor.cpp" />
@@ -153,6 +155,7 @@
     <ResourceCompile Include="UtilitarioMemoria.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="find.ico" />
     <Image Include="load.ico" />
     <Image Include="process.ico" />
     <Image Include="save.ico" />

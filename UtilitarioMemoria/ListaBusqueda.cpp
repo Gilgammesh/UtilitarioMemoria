@@ -6,11 +6,18 @@
 #include <limits>
 
 // Crea el Label de total de registros
-HWND CrearLabelTotal(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id)
+HWND CrearLabelTotalRegistros(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id)
 {
-	HWND hLabel = CreateWindowW(L"STATIC", L"Total de registros: 0", WS_CHILD | WS_VISIBLE,
+	HWND hLabel = CreateWindowW(L"STATIC", L" Total de registros: 0", WS_CHILD | WS_VISIBLE,
 		x, y, width, height, hWndParent, (HMENU)(UINT_PTR)id, hInst, NULL);
 	return hLabel;
+}
+
+HWND CrearLabelNroEscaneos(HWND hWndParent, HINSTANCE hInst, int x, int y, int width, int height, int id)
+{
+    HWND hLabel = CreateWindowW(L"STATIC", L"  Numero de escaneos: 0", WS_CHILD | WS_VISIBLE,
+        x, y, width, height, hWndParent, (HMENU)(UINT_PTR)id, hInst, NULL);
+    return hLabel;
 }
 
 // Crea el ListView principal
@@ -77,7 +84,7 @@ void ActualizarListViewPrincipalString(HWND hListView, const std::vector<ScanRes
 
     // --- ACTUALIZA EL LABEL ---
     if (hLabelTotal) {
-        std::wstring txt = L"Total de registros: " + std::to_wstring(resultados.size());
+        std::wstring txt = L" Total de registros: " + std::to_wstring(resultados.size());
         SetWindowTextW(hLabelTotal, txt.c_str());
     }
 }
@@ -114,7 +121,7 @@ void ActualizarListViewPrincipalInt(HWND hListView, const std::vector<ScanResult
 
     // --- ACTUALIZA EL LABEL ---
     if (hLabelTotal) {
-        std::wstring txt = L"Total de registros: " + std::to_wstring(resultados.size());
+        std::wstring txt = L" Total de registros: " + std::to_wstring(resultados.size());
         SetWindowTextW(hLabelTotal, txt.c_str());
     }
 }
@@ -151,7 +158,7 @@ void ActualizarListViewPrincipalInt64(HWND hListView, const std::vector<ScanResu
 
     // --- ACTUALIZA EL LABEL ---
     if (hLabelTotal) {
-        std::wstring txt = L"Total de registros: " + std::to_wstring(resultados.size());
+        std::wstring txt = L" Total de registros: " + std::to_wstring(resultados.size());
         SetWindowTextW(hLabelTotal, txt.c_str());
     }
 }
@@ -193,7 +200,7 @@ void ActualizarListViewPrincipalFloat(HWND hListView, const std::vector<ScanResu
 
     // --- ACTUALIZA EL LABEL ---
     if (hLabelTotal) {
-        std::wstring txt = L"Total de registros: " + std::to_wstring(resultados.size());
+        std::wstring txt = L" Total de registros: " + std::to_wstring(resultados.size());
         SetWindowTextW(hLabelTotal, txt.c_str());
     }
 }
@@ -235,7 +242,7 @@ void ActualizarListViewPrincipalDouble(HWND hListView, const std::vector<ScanRes
 
     // --- ACTUALIZA EL LABEL ---
     if (hLabelTotal) {
-        std::wstring txt = L"Total de registros: " + std::to_wstring(resultados.size());
+        std::wstring txt = L" Total de registros: " + std::to_wstring(resultados.size());
         SetWindowTextW(hLabelTotal, txt.c_str());
     }
 }
